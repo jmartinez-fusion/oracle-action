@@ -21,4 +21,4 @@ jobs:
       id: get-ocir-repository
       with:
         name: oraclelinux
-        compartment: meta
+        compartment: "ocid1.compartment.oc1..aaaaaaaaxaicmisivylqal5y5ifobsp4pj64k2lm53uft2pf3z4cisv5vnaq"
