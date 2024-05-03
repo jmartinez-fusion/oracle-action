@@ -13,5 +13,5 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: iad.ocir.io
-          username: idwwmbyiyhww/ldiaz@fsuion.com.ar
-          password: T0Emq5cQ{2Pi:xIHq4L{
+          username: idwwmbyiyhww/ldiaz@fusion.com.ar
+          password: "]nK-0q]GGd+jt;h-UVX."
