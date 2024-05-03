@@ -10,11 +10,17 @@ jobs:
     runs-on: ubuntu-22.04
     name: Get OCIR Repository Test
     env:
-      OCI_CLI_USER: ${{ secrets.OCI_CLI_USER }}
-      OCI_CLI_TENANCY: ${{ secrets.OCI_CLI_TENANCY }}
-      OCI_CLI_FINGERPRINT: ${{ secrets.OCI_CLI_FINGERPRINT }}
-      OCI_CLI_KEY_CONTENT: ${{ secrets.OCI_CLI_KEY_CONTENT }}
-      OCI_CLI_REGION: ${{ secrets.OCI_CLI_REGION }}
+      OCI_CLI_USER: ocid1.user.oc1..aaaaaaaaxab3nf577pc6xd4tlhj4z5iqw7qbq2ralhdvvqt5jq5dxggzlxuq
+      OCI_CLI_TENANCY: ocid1.tenancy.oc1..aaaaaaaakz5exruyvbf465a64rf26adfkfanor7eywh5ks3ec4hsnuw674eq
+      OCI_CLI_FINGERPRINT: ff:f0:0c:63:ed:9e:2d:06:46:0e:e7:70:ed:f0:cb:8f
+      OCI_CLI_KEY_CONTENT: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArhT6OojPyG4cNYV0BhRP
+fKvIt/EpkdACMKF3nBGo5746cnYxDycZPWFUW8r/MBWQYvYwLYFy33Orl71hk8jO
+TizZuZKFzBitSJPaopnQ3xi0sLV9XRoEM/GzNhBv6KrHSnL+7sy3jiQjeU0uESrq
+BiiE7YrXES7vL5cXgns8ZFLKrXSi2/PrjHKUCIdn/L2K8uE12CK18y3KRXxlPbSk
+gVGmBy5LaLwOfj5x0PdsXAsLsPSs7j+IGe1+kCWnVGanxDzQyRR7hKOBmfD9Tcql
+ii6bizcWJVQ1e3Tej3U9dDRICdud7pDbkm63UmfoimlOjFyd5wtLdFiqjfKywDja
+HQIDAQAB
+      OCI_CLI_REGION: us-ashburn-1
     steps:
       - name: Get or create an OCIR Repository
         uses: oracle-actions/get-ocir-repository@v1.2.1
