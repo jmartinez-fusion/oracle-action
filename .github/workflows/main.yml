@@ -8,7 +8,7 @@ jobs:
   # login:
   get-ocir-repository-test:
     runs-on: ubuntu-latest
-     name: Get OCIR Repository Test
+    name: Get OCIR Repository Test
     env:
       # OCI_CLI_USER: ${{ secrets.OCI_CLI_USER }}
       # OCI_CLI_TENANCY: ${{ secrets.OCI_CLI_TENANCY }}
