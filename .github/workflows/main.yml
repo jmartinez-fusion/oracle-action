@@ -5,7 +5,6 @@ on:
     branches: master
 
 jobs:
-  # login:
   get-ocir-repository-test:
     runs-on: ubuntu-latest
     name: Get OCIR Repository Test
@@ -26,5 +25,5 @@ jobs:
         uses: oracle-actions/get-ocir-repository@v1.2.1
         id: get-ocir-repository
         with:
-          name: cmtooloci
+          name: github
           compartment: ${{ secrets.OCI_COMPARTMENT_OCID }}
