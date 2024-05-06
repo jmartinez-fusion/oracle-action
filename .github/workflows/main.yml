@@ -14,4 +14,6 @@ jobs:
           registry: iad.ocir.io
           username: idwwmbyiyhww/ldiaz@fusion.com.ar
           password: "]nK-0q]GGd+jt;h-UVX."
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
   
