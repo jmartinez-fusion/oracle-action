@@ -15,3 +15,9 @@ jobs:
           registry: iad.ocir.io
           username: idwwmbyiyhww/ldiaz@fusion.com.ar
           password: "]nK-0q]GGd+jt;h-UVX."
+      - name: Get or create an OCIR Repository
+        uses: oracle-actions/get-ocir-repository@v1.2.1
+        id: get-ocir-repository
+        with:
+          name: cmtooloci
+          compartment: "ocid1.tenancy.oc1..aaaaaaaakz5exruyvbf465a64rf26adfkfanor7eywh5ks3ec4hsnuw674eq"
