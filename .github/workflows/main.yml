@@ -7,23 +7,11 @@ on:
 jobs:
   get-ocir-repository-test:
     runs-on: ubuntu-latest
-    name: Get OCIR Repository Test
-    env:
-      OCI_CLI_USER: ${{ secrets.OCI_CLI_USER }}
-      OCI_CLI_TENANCY: ${{ secrets.OCI_CLI_TENANCY }}
-      OCI_CLI_FINGERPRINT: ${{ secrets.OCI_CLI_FINGERPRINT }}
-      OCI_CLI_KEY_CONTENT: ${{ secrets.OCI_CLI_KEY_CONTENT }}
-      OCI_CLI_REGION: ${{ secrets.OCI_CLI_REGION }}
     steps:
-      # - name: Login to GitHub Container Registry
-      #   uses: docker/login-action@v3
-      #   with:
-      #     registry: iad.ocir.io
-      #     username: idwwmbyiyhww/ldiaz@fusion.com.ar
-      #     password: "]nK-0q]GGd+jt;h-UVX."
-      - name: Get or create an OCIR Repository
-        uses: oracle-actions/get-ocir-repository@v1.2.1
-        id: get-ocir-repository
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
         with:
-          name: github
-          compartment: ${{ secrets.OCI_COMPARTMENT_OCID }}
+          registry: iad.ocir.io
+          username: idwwmbyiyhww/ldiaz@fusion.com.ar
+          password: "]nK-0q]GGd+jt;h-UVX."
+  
